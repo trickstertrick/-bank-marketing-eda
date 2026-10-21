@@ -1,0 +1,72 @@
+{
+  "raw": {
+    "rows": 45211,
+    "columns": 17,
+    "blank_cells": 0,
+    "literal_null_cells": 0,
+    "exact_duplicate_rows": 0,
+    "unknown_by_column": {
+      "age": 0,
+      "job": 288,
+      "marital": 0,
+      "education": 1857,
+      "default": 0,
+      "balance": 0,
+      "housing": 0,
+      "loan": 0,
+      "contact": 13020,
+      "day": 0,
+      "month": 0,
+      "duration": 0,
+      "campaign": 0,
+      "pdays": 0,
+      "previous": 0,
+      "poutcome": 36959,
+      "y": 0
+    },
+    "loaded_dtypes": {
+      "age": "str",
+      "job": "str",
+      "marital": "str",
+      "education": "str",
+      "default": "str",
+      "balance": "str",
+      "housing": "str",
+      "loan": "str",
+      "contact": "str",
+      "day": "str",
+      "month": "str",
+      "duration": "str",
+      "campaign": "str",
+      "pdays": "str",
+      "previous": "str",
+      "poutcome": "str",
+      "y": "str"
+    }
+  },
+  "clean_rows": 45211,
+  "clean_columns": 23,
+  "negative_balance_rows": 3766,
+  "prior_contact_consistency_mismatches": 0,
+  "prior_outcome_missing_reasons": {
+    "not_applicable_no_prior_contact": 36954,
+    "observed": 8252,
+    "unknown_despite_prior_contact": 5
+  },
+  "missing_any_of_three_rows": 14304,
+  "overall_subscription_pct": 11.698480458295547,
+  "checks": {
+    "same_row_count": true,
+    "balance_unchanged": true,
+    "original_outcome_unchanged": true,
+    "missing_codes_exactly_mapped": true,
+    "all_source_rows_unique_and_retained": true,
+    "pdays_sentinel_preserved": true,
+    "structural_days_missing_correctly": true,
+    "missing_pattern_counts_sum_to_rows": true,
+    "education_group_counts_sum_to_rows": true,
+    "campaign_group_counts_sum_to_rows": true,
+    "seven_figures": true,
+    "raw_hash_unchanged": true
+  }
+}

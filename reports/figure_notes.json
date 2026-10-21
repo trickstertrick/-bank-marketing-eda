@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "01_missing.png",
+    "title": "Eksik bilgi hangi alanlarda yoğunlaşıyor?",
+    "finding": "En yüksek eksik bilgi oranı contact alanında: %28.80 (n=13,020).",
+    "limitation": "UCI üst verisi boş/NA değer olmadığını bildirir; burada ölçülen, gerçek unknown kodlarının anlamsal eksikliğidir. Eksiklik mekanizması kanıtlanmaz."
+  },
+  {
+    "filename": "02_missing_patterns.png",
+    "title": "Eksik bilgiler birlikte mi görülüyor?",
+    "finding": "Üç alanda da bilgi bulunan 30,907 kayıt var; en az bir eksik alanı olan 14,304 kayıt korunuyor.",
+    "limitation": "Örüntüler yalnız bu üç alanı kapsar; MCAR, MAR veya MNAR sınıflaması için tek başına yeterli değildir."
+  },
+  {
+    "filename": "03_balance_distribution.png",
+    "title": "Bakiye dağılımı ve aykırı gözlemler",
+    "finding": "Ortalama 1362.27 EUR, medyan 448.00 EUR; negatif bakiyeli 3,766 kayıt var. IQR kuralı 4,729 bakiyeyi işaretliyor (%10.46).",
+    "limitation": "IQR etiketi veri hatası değildir; negatif bakiye de otomatik hata sayılmaz. asinh ve symlog yalnız görselleştirme içindir; temiz bakiye değerleri değiştirilmez."
+  },
+  {
+    "filename": "04_education_subscription.png",
+    "title": "Eğitim gruplarında gözlenen oranlar nasıl?",
+    "finding": "En yüksek oran tertiary grubunda %15.01; en düşük primary grubunda %8.63. Paydalar grafikte gösteriliyor; eksik eğitim ayrı grupta tutuldu.",
+    "limitation": "Bunlar örneklem içi betimsel oranlardır; eğitim etkisi veya nedensel fark değildir. Yaş, gelir, seçim ve kampanya bileşimi kontrol edilmedi; güven aralığı veya hipotez testi yapılmadı."
+  },
+  {
+    "filename": "05_campaign_subscription.png",
+    "title": "Temas sayısı grupları nasıl farklılaşıyor?",
+    "finding": "Tek temas grubunda oran %14.60 (n=17,544); 11+ temas grubunda %3.93 (n=1,196).",
+    "limitation": "Temas sayısı rastgele atanmadı; zor ikna edilen kayıtlarda daha fazla temas olabilir. Bu sonuçtan arama sayısını azaltmanın aboneliği artıracağı çıkarılamaz."
+  },
+  {
+    "filename": "06_balance_by_subscription.png",
+    "title": "Abone olan ve olmayan kayıtlarda bakiye nasıl?",
+    "finding": "Medyan bakiye: abone olmayanlarda 417.00 EUR; olanlarda 733.00 EUR. Her iki grupta da uç değerler korundu.",
+    "limitation": "Gruplar eş büyüklükte değil; bakiye farkı aboneliğe neden olan bir etki veya müşteri geliri ölçümü değildir. Tek bir ortalama/medyan tüm dağılımı anlatmaz."
+  },
+  {
+    "filename": "07_spearman.png",
+    "title": "Sayısal değişkenler arasında sıralı ilişki var mı?",
+    "finding": "Gösterilen çiftlerde mutlak değeri en büyük Spearman katsayısı campaign–previous için -0.108.",
+    "limitation": "Seçili ilişkiler betimseldir; sıfıra yakın katsayı tüm bağımlılıkları dışlamaz. pdays=-1 yapısal kodu korelasyona alınmadı. duration görüşme sonrası bilinir; önceden hedefleme özelliği gibi kullanılamaz."
+  }
+]
